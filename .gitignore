@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+
+# Generated portals (created at runtime, pushed to GitHub separately)
+portals/
+../portals/
+
+# OS / editor junk
+.DS_Store
+*.log
+.vscode/
+.idea/

@@ -1,0 +1,208 @@
+{
+  "portalName": "Workspace Portal",
+  "appName": "Workspace Admin",
+  "industry": "Generic Business",
+  "logo": "",
+  "logoInitials": "WA",
+  "theme": {
+    "primary": "#2563EB",
+    "primaryHover": "#1D4ED8",
+    "primaryLight": "#DBEAFE",
+    "accent": "#14B8A6"
+  },
+  "loginPage": {
+    "portalName": "Workspace Portal",
+    "badge": "Operations Management",
+    "headline": "Manage records and workflows from one secure workspace",
+    "highlightText": "records",
+    "description": "Run your daily operations, permissions, and reporting from a single configurable portal.",
+    "features": [
+      {
+        "title": "Secure Access",
+        "description": "Role-based access for authorized users.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Configurable Modules",
+        "description": "Tables, forms, navigation, and dashboards follow the selected configuration.",
+        "icon": "LayoutGrid"
+      }
+    ]
+  },
+  "routes": {
+    "loginPath": "/login",
+    "appBasePath": "/organization",
+    "dashboardPath": "/organization/dashboard",
+    "profilePath": "/organization/profile"
+  },
+  "dashboard": {
+    "enabled": true,
+    "label": "Dashboard",
+    "icon": "LayoutDashboard",
+    "title": "Workspace Admin",
+    "description": "Live operational overview",
+    "widgets": ["module-counts", "currency-sum", "status-breakdown", "created-trend"]
+  },
+  "footer": {
+    "text": "Workspace Admin"
+  },
+  "company": {
+    "name": "Workspace Admin",
+    "website": "",
+    "address": ""
+  },
+  "support": {
+    "email": "support@example.com",
+    "phone": "",
+    "helpUrl": ""
+  },
+  "featureFlags": {
+    "profile": true,
+    "signup": false
+  },
+  "generatedModules": [
+    {
+      "id": "contacts",
+      "tableName": "contacts",
+      "singularName": "Contact",
+      "pluralName": "Contacts",
+      "icon": "Users",
+      "permissions": {
+        "read": "contacts:read",
+        "write": "contacts:write",
+        "delete": "contacts:delete"
+      },
+      "fields": [
+        {
+          "key": "full_name",
+          "label": "Full Name",
+          "type": "text",
+          "required": true,
+          "width": "half",
+          "placeholder": "Enter full name",
+          "helpText": ""
+        },
+        {
+          "key": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "width": "half",
+          "placeholder": "name@example.com",
+          "helpText": ""
+        },
+        {
+          "key": "phone",
+          "label": "Phone",
+          "type": "phone",
+          "required": false,
+          "width": "half",
+          "placeholder": "",
+          "helpText": ""
+        },
+        {
+          "key": "status",
+          "label": "Status",
+          "type": "select",
+          "required": true,
+          "options": ["Active", "Pending", "Inactive"],
+          "width": "half",
+          "placeholder": "Select status",
+          "helpText": ""
+        },
+        {
+          "key": "estimated_value",
+          "label": "Estimated Value",
+          "type": "currency",
+          "required": false,
+          "width": "half",
+          "placeholder": "0",
+          "helpText": ""
+        },
+        {
+          "key": "notes",
+          "label": "Notes",
+          "type": "textarea",
+          "required": false,
+          "width": "full",
+          "placeholder": "",
+          "helpText": ""
+        }
+      ],
+      "listColumns": ["full_name", "email", "status", "estimated_value"],
+      "tableFeatures": {
+        "sort": true,
+        "filter": true,
+        "search": true,
+        "pagination": true
+      }
+    },
+    {
+      "id": "work_items",
+      "tableName": "work_items",
+      "singularName": "Work Item",
+      "pluralName": "Work Items",
+      "icon": "ClipboardList",
+      "permissions": {
+        "read": "work_items:read",
+        "write": "work_items:write",
+        "delete": "work_items:delete"
+      },
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "required": true,
+          "width": "half",
+          "placeholder": "Enter title",
+          "helpText": ""
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false,
+          "width": "half",
+          "placeholder": "",
+          "helpText": ""
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "radio",
+          "required": true,
+          "options": ["Low", "Medium", "High"],
+          "width": "half",
+          "placeholder": "",
+          "helpText": ""
+        },
+        {
+          "key": "due_date",
+          "label": "Due Date",
+          "type": "date",
+          "required": false,
+          "width": "half",
+          "placeholder": "",
+          "helpText": ""
+        },
+        {
+          "key": "completed",
+          "label": "Completed",
+          "type": "toggle",
+          "required": false,
+          "width": "half",
+          "placeholder": "",
+          "helpText": ""
+        }
+      ],
+      "listColumns": ["title", "owner", "priority", "due_date", "completed"],
+      "tableFeatures": {
+        "sort": true,
+        "filter": true,
+        "search": true,
+        "pagination": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "portalName": "Demo Health Group — Organization Portal",
+  "logo": {
+    "src": "/logo.webp",
+    "alt": "Demo Health Group",
+    "width": 140
+  },
+  "theme": {
+    "mode": "system",
+    "tokens": {
+      "primary": "221 83% 53%",
+      "ring": "221 83% 53%",
+      "radius": "0.75rem",
+      "brand-primary": "#2563EB",
+      "brand-accent": "#3B82F6",
+      "gradient-start": "#2563EB",
+      "gradient-end": "#1D4ED8"
+    }
+  },
+  "dashboard": {
+    "heroTitle": "Manage your patients & claims",
+    "primaryActions": ["patients", "claims", "batches"],
+    "secondaryActions": ["users", "accounts", "subscription", "usage", "invoices"]
+  },
+  "navigation": [
+    { "label": "Dashboard", "icon": "LayoutDashboard", "path": "/organization/dashboard", "permission": "dashboard:read" },
+    { "label": "Patients", "icon": "Heart", "path": "/organization/patients", "permission": "patients:read" },
+    { "label": "Claim Status", "icon": "FileText", "path": "/organization/claims-status", "permission": "claimstatus:read" },
+    { "label": "Batches", "icon": "Layers", "path": "/organization/batches", "permission": "batches:read" },
+    { "label": "Users", "icon": "Users", "path": "/organization/users", "permission": "organizationusers:read" },
+    { "label": "Accounts", "icon": "Building", "path": "/organization/accounts", "permission": "accounts:read" },
+    {
+      "label": "Billing", "icon": "CreditCard", "permission": "billing:read",
+      "children": [
+        { "label": "Payment Method", "path": "/organization/billing/payment-method", "permission": "paymentmethod:read" },
+        { "label": "Subscription", "path": "/organization/billing/subscription", "permission": "subscription:read" },
+        { "label": "Usage", "path": "/organization/billing/usage", "permission": "usage:read" },
+        { "label": "Invoices", "path": "/organization/billing/invoices", "permission": "invoices:read" }
+      ]
+    },
+    {
+      "label": "Settings", "icon": "Settings", "permission": "settings:read",
+      "children": [
+        { "label": "Payers", "path": "/admin/settings/payers", "permission": "settings:read" }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "patient",
+      "table": "patients",
+      "basePath": "/api/v1/patient",
+      "permissions": { "read": "patients:read", "write": "patients:write", "delete": "patients:delete" },
+      "requiresActiveAccount": true,
+      "supportsImport": true,
+      "searchColumn": "first_name",
+      "fields": [
+        { "name": "firstName", "type": "string", "required": true },
+        { "name": "lastName", "type": "string", "required": true },
+        { "name": "dateOfBirth", "type": "date" },
+        { "name": "memberId", "type": "string" },
+        { "name": "payerName", "type": "string" },
+        { "name": "insuranceStatus", "type": "enum", "options": ["Verified", "Pending", "Inactive"] },
+        { "name": "accountId", "type": "ref", "ref": "account" }
+      ]
+    },
+    {
+      "name": "account",
+      "table": "accounts",
+      "basePath": "/api/v1/accounts",
+      "permissions": { "read": "accounts:read", "write": "accounts:write", "delete": "accounts:delete" },
+      "searchColumn": "name",
+      "fields": [
+        { "name": "npi", "type": "string", "required": true },
+        { "name": "name", "type": "string", "required": true },
+        { "name": "address", "type": "string" },
+        { "name": "city", "type": "string" },
+        { "name": "state", "type": "string" },
+        { "name": "zip", "type": "string" },
+        { "name": "taxId", "type": "string" },
+        { "name": "stcCodes", "type": "string[]" },
+        { "name": "status", "type": "enum", "options": ["Active", "Inactive"] }
+      ]
+    },
+    {
+      "name": "organizationUser",
+      "table": "organization_users",
+      "basePath": "/api/v1/organization/users",
+      "permissions": { "read": "organizationusers:read", "write": "organizationusers:write", "delete": "organizationusers:delete" },
+      "searchColumn": "email",
+      "fields": [
+        { "name": "firstName", "type": "string", "required": true },
+        { "name": "lastName", "type": "string", "required": true },
+        { "name": "email", "type": "string", "required": true },
+        { "name": "phoneNumber", "type": "string" },
+        { "name": "role", "type": "enum", "options": ["Organization Admin", "Organization User"] },
+        { "name": "status", "type": "enum", "options": ["Active", "Inactive"] },
+        { "name": "accountIds", "type": "ref[]", "ref": "account" }
+      ]
+    },
+    {
+      "name": "batch",
+      "table": "batches",
+      "basePath": "/api/v1/batches",
+      "permissions": { "read": "batches:read", "write": "batches:write", "delete": "batches:delete" },
+      "deleteAllowedStatuses": ["COMPLETED", "FAILED_SYSTEM_ERROR"],
+      "searchColumn": "name",
+      "fields": [
+        { "name": "name", "type": "string", "required": true },
+        { "name": "accountId", "type": "ref", "ref": "account" },
+        { "name": "type", "type": "enum", "options": ["CLAIMS_SUBMISSION", "TEST"] },
+        { "name": "status", "type": "enum", "options": ["PENDING", "PROCESSING", "COMPLETED", "FAILED_SYSTEM_ERROR"] }
+      ]
+    },
+    {
+      "name": "claim",
+      "table": "claims",
+      "basePath": "/api/v1/claim-status",
+      "permissions": { "read": "claimstatus:read" },
+      "readOnly": true,
+      "accountFiltered": true,
+      "searchColumn": "patient_name"
+    }
+  ]
+}

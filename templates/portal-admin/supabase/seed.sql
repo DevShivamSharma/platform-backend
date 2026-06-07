@@ -1,0 +1,12 @@
+-- ============================================================
+-- portal-admin — production seed policy
+-- ============================================================
+-- Generated portals must not ship sample business records.
+--
+-- Provisioning creates only:
+--   - the initial Supabase Auth admin user
+--   - one organization row for system ownership
+--   - one organization_users profile row linked to that admin user
+--
+-- CRUD/business tables intentionally start empty. Users enter real data later.
+-- ============================================================

@@ -1,0 +1,162 @@
+{
+  "siteName": "Shivam Sharma",
+  "meta": {
+    "title": "Shivam Sharma — Full Stack Engineer",
+    "description": "Shivam Sharma — Full Stack Engineer building polished frontend experiences and reliable backend systems."
+  },
+  "profile": {
+    "firstName": "Shivam",
+    "fullName": "Shivam Sharma",
+    "role": "Frontend Engineer",
+    "currentTitle": "Frontend Engineer",
+    "company": "Blump Tech Private Limited",
+    "period": "July 2022 – Present",
+    "location": "Delhi, India",
+    "email": "shivams967@gmail.com",
+    "phone": "+91 9971495653",
+    "heroHeadline": "Building scalable web applications with React.js, Angular, and TypeScript — focused on responsive UI, REST API integration, and frontend performance.",
+    "heroSummary": "Frontend Engineer with 4+ years of experience building scalable web applications using React.js, Angular, and TypeScript. Skilled in responsive UI, REST API integration, reusable components, Redux, NgRx, RxJS, and frontend performance optimization — with results including 35% faster load times and 20–30% fewer redundant API calls.",
+    "availability": "Open to Frontend and Full-Stack Engineering opportunities."
+  },
+  "education": {
+    "degree": "Bachelor of Technology in Computer Science and Engineering",
+    "school": "Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
+    "period": "2018 – 2022",
+    "cgpa": "7.31",
+    "summary": "Bachelor of Technology · CGPA 7.31"
+  },
+  "stats": [
+    { "value": "4+", "label": "Years of Experience" },
+    { "value": "10+", "label": "Production Web Apps" },
+    { "value": "35%", "label": "Faster Load Times" },
+    { "value": "80%+", "label": "Test Coverage Target" },
+    { "value": "18", "label": "Institutions Served" }
+  ],
+  "skills": {
+    "Languages": ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "SCSS"],
+    "Frontend": ["React.js", "React Hooks", "Context API", "Angular", "Next.js", "Redux", "NgRx", "RxJS", "Angular Material", "Bootstrap", "Tailwind CSS", "Figma"],
+    "UI / Performance": ["Responsive Design", "WCAG 2.1 AA", "Cross-Browser Support", "Reusable Components", "Storybook", "Code Splitting", "Lazy Loading", "Core Web Vitals", "Lighthouse", "OnPush Change Detection"],
+    "Testing / Tools": ["Jest", "React Testing Library", "Cypress", "Karma", "Jasmine", "Webpack", "Vite", "npm", "ESLint", "Prettier", "Git", "GitHub", "GitLab", "Agile", "Scrum", "CI/CD"],
+    "Backend Exposure": ["Node.js", "Express.js", "REST API Design", "JWT", "MongoDB"]
+  },
+  "supportingSkills": [
+    "REST API Integration",
+    "Token-Based Authentication",
+    "HTTP Interceptors",
+    "State Management (Redux / NgRx / RxJS)",
+    "Component Library Design",
+    "Frontend Performance Optimization",
+    "Unit Testing (Jest / Karma / Jasmine)"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "TheSwapp",
+      "description": "A multi-tenant church ministry platform live on AWS. Owned the complete Angular 13 frontend and contributed to backend REST APIs with Node.js and Express.js.",
+      "metrics": ["Live on AWS", "Multi-tenant", "Frontend + Backend"],
+      "tech": ["Angular 13", "TypeScript", "Bootstrap", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Stripe", "Google Maps APIs", "jsPDF", "Twilio", "Nodemailer", "Moment.js"],
+      "features": [
+        "Owned the complete Angular 13 frontend with role-based dashboards, tenant-isolated views, reusable Bootstrap components, route guards, and lazy-loaded modules.",
+        "Contributed to backend development using Node.js and Express.js for REST APIs, MongoDB/Mongoose models, JWT-secured endpoints, and Joi validation.",
+        "Applied Helmet-based security hardening across backend routes.",
+        "Integrated Stripe, Google Maps, Twilio, and Nodemailer for payments, location services, and member communication."
+      ],
+      "note": "Church ministry platform — multi-tenant, live on AWS (December 2025).",
+      "type": "Community",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "CQ Servicing",
+      "description": "A multi-tenant lending platform serving 18 institutions with configurable workflows, tenant-isolated views, reporting screens, and approval workflows.",
+      "metrics": ["18 institutions", "40% faster processing", "Multi-tenant"],
+      "tech": ["Angular 14", "TypeScript", "RxJS", "Angular Calendar", "Ngx-Charts", "ExcelJS", "PDFMake", "Docxtemplater"],
+      "features": [
+        "Built frontend modules with dashboards, configurable workflows, tenant-isolated views, reporting screens, and approval workflows.",
+        "Implemented loan lifecycle screens, document handling, PDF generation, and Excel exports.",
+        "Delivered analytics dashboards and calendar workflows across the loan lifecycle.",
+        "Improved loan processing efficiency by 40% through streamlined product flow design."
+      ],
+      "note": "Multi-tenant lending platform (August 2025).",
+      "type": "Lending",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "WellCare Health",
+      "description": "A healthcare platform with patient, provider, and admin workflows — responsive screens, role-based access, and REST API integrations.",
+      "metrics": ["35% faster initial load", "Role-based access", "RxJS data flows"],
+      "tech": ["Angular", "TypeScript", "RxJS", "Bootstrap", "REST APIs", "Chart.js", "Firebase Storage"],
+      "features": [
+        "Led frontend delivery for patient, provider, and admin workflows with responsive screens and reusable UI patterns.",
+        "Implemented role-based access, route guards, form validation, and REST API integrations.",
+        "Built RxJS data flows, Firebase Storage uploads, and Chart.js dashboards.",
+        "Reduced initial load time by 35% with lazy-loaded modules, OnPush change detection, and route-level code splitting."
+      ],
+      "note": "Healthcare platform (February 2025).",
+      "type": "Healthcare",
+      "featured": true
+    }
+  ],
+  "experience": [
+    {
+      "period": "July 2022 – Present",
+      "title": "Frontend Engineer",
+      "company": "Blump Tech Private Limited",
+      "location": "Delhi, India",
+      "description": "Frontend Engineer with 4+ years of experience building scalable web applications using React.js, Angular, and TypeScript across enterprise products.",
+      "bullets": [
+        "Developed 10+ production web applications in React.js and Angular with TypeScript, REST API integration, token-based authentication, HTTP interceptors, and cross-browser support.",
+        "Built reusable, responsive, WCAG 2.1 AA accessible UI component libraries with designers and backend engineers, reducing repeated frontend effort by 30%.",
+        "Optimized Core Web Vitals and reduced redundant API calls by 20–30% using code splitting, lazy loading, tree shaking, and RxJS caching with shareReplay and TTL.",
+        "Implemented Redux, NgRx, and RxJS state management to deliver predictable data flows across dashboards and product workflows.",
+        "Collaborated cross-functionally with product managers, designers, and backend engineers while writing unit tests with Jest, Karma, and Jasmine targeting 80%+ coverage on critical modules."
+      ],
+      "skills": ["React.js", "Angular", "TypeScript", "Redux", "NgRx", "RxJS", "REST APIs", "Performance"]
+    },
+    {
+      "period": "July 2025",
+      "title": "Angular (2025 Edition)",
+      "company": "Udemy Certification",
+      "location": "Online",
+      "description": "Deep refresh on modern Angular — components, RxJS, routing, forms, state, and performance patterns aligned with current production stacks.",
+      "bullets": [
+        "Reinforced Angular fundamentals through hands-on modules covering components, services, and dependency injection.",
+        "Practiced RxJS-based data flows, route guards, lazy loading, and OnPush change detection patterns.",
+        "Strengthened TypeScript usage, reactive forms, and structured Angular project organization."
+      ],
+      "skills": ["Angular", "TypeScript", "RxJS", "Routing", "Forms"],
+      "link": {
+        "label": "View Certificate",
+        "href": "https://drive.google.com/file/d/1w5EVNhEf0P99kHqXbrXUAUfTHSo7dqbf/view"
+      }
+    },
+    {
+      "period": "2018 – 2022",
+      "title": "B.Tech in Computer Science and Engineering",
+      "company": "Dr. A.P.J. Abdul Kalam Technical University",
+      "location": "Lucknow, India · CGPA: 7.31",
+      "description": "Academic foundation in computer science fundamentals supporting application design, data handling, and structured software engineering.",
+      "bullets": [
+        "Graduated with a B.Tech in Computer Science and Engineering.",
+        "Built grounding in programming, data structures, DBMS, OOP, and software engineering fundamentals."
+      ],
+      "skills": ["Computer Science", "DBMS", "OOPS", "Software Engineering"]
+    }
+  ],
+  "services": [
+    { "icon": "monitor", "title": "React.js & Angular Web Apps", "description": "Production-grade React.js and Angular applications with TypeScript, responsive UI, and REST API integration." },
+    { "icon": "layers", "title": "Reusable Component Libraries", "description": "Accessible (WCAG 2.1 AA) component systems with Storybook documentation, designed alongside designers and backend engineers." },
+    { "icon": "bar-chart", "title": "Frontend Performance Optimization", "description": "Core Web Vitals tuning, code splitting, lazy loading, tree shaking, OnPush change detection, and RxJS caching strategies." },
+    { "icon": "link", "title": "State Management", "description": "Predictable data flows using Redux, NgRx, and RxJS for dashboards, multi-tenant views, and product workflows." },
+    { "icon": "server", "title": "REST API Integration", "description": "Robust API integration with token-based authentication, HTTP interceptors, error handling, and request caching." },
+    { "icon": "zap", "title": "Frontend Testing", "description": "Unit and component tests with Jest, React Testing Library, Karma, and Jasmine targeting 80%+ coverage on critical modules." }
+  ],
+  "contactLinks": [
+    { "type": "email", "label": "Email", "value": "shivams967@gmail.com", "href": "mailto:shivams967@gmail.com" },
+    { "type": "phone", "label": "Phone", "value": "+91 9971495653", "href": "tel:+919971495653" },
+    { "type": "linkedin", "label": "LinkedIn", "value": "linkedin.com/in/shivam-sharma-9a1679158", "href": "https://www.linkedin.com/in/shivam-sharma-9a1679158/" },
+    { "type": "github", "label": "GitHub", "value": "github.com/kakarotx10", "href": "https://github.com/kakarotx10" }
+  ],
+  "footerCopyright": "© 2026 — Shivam Sharma. Crafted in Delhi."
+}

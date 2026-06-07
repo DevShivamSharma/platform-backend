@@ -1,0 +1,195 @@
+{
+  "siteName": "Shivam Sharma",
+  "meta": {
+    "title": "Shivam Sharma — Full Stack Developer · Engineer of Interfaces & Systems",
+    "description": "Shivam Sharma — Full Stack Developer building polished frontend experiences and reliable backend systems across enterprise workflows."
+  },
+  "profile": {
+    "firstName": "Shivam",
+    "fullName": "Shivam Sharma",
+    "role": "Full Stack Developer",
+    "currentTitle": "Lead Frontend Engineer",
+    "company": "BLUMP TECH PRIVATE LIMITED",
+    "period": "July 2022 – Present",
+    "location": "Delhi, India",
+    "email": "shivams967@gmail.com",
+    "phone": "+91 9971495653",
+    "heroHeadline": "Writing interfaces in React and reliable backends in Node — four years across enterprise workflows, three sectors, one practice.",
+    "heroSummary": "I started writing software with a fixation on interface — the place a person actually meets the product. That work, four years of it across enterprise products in healthcare, community operations, and lending, taught me how a real application is shaped: where data lives, how state is invalidated, why latency is felt before it's measured. Frontend was never the surface; it was always the system, viewed from a particular angle.",
+    "availability": "Open to frontend, backend, and full-stack engineering opportunities."
+  },
+  "education": {
+    "degree": "Bachelor of Technology in Computer Science and Engineering",
+    "school": "Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
+    "period": "2018 – 2022",
+    "cgpa": "7.31",
+    "summary": "B.Tech CSE · CGPA 7.31"
+  },
+  "stats": [
+    { "value": "10+", "label": "Web Apps Worked On" },
+    { "value": "50+", "label": "Reusable Components" },
+    { "value": "42+", "label": "Layouts Delivered" },
+    { "value": "80+", "label": "Services Across Enterprise Systems" },
+    { "value": "18", "label": "Institutions Supported" }
+  ],
+  "skills": {
+    "Frontend Development": [
+      "Angular", "React", "JavaScript", "TypeScript", "HTML5", "CSS3", "SCSS", "Bootstrap", "Responsive UI", "Reusable Components"
+    ],
+    "Backend Development": [
+      "Node.js", "Express.js", "REST APIs", "CRUD Operations", "Middleware", "Routing", "Authentication Concepts", "Request / Response Lifecycle", "Server-side Logic", "MongoDB (learning)"
+    ],
+    "Programming / Fundamentals": [
+      "C++", "C", "Python", "Java", "SQL", "DBMS", "OOPS", "Operating Systems", "Software Engineering"
+    ],
+    "Tools": [
+      "Git", "GitHub", "GitLab", "Postman", "Chrome DevTools"
+    ],
+    "Engineering Mindset": [
+      "API Design Thinking", "Debugging", "Scalable Architecture Thinking", "Problem Solving", "Performance Awareness"
+    ]
+  },
+  "supportingSkills": [
+    "REST API Integration Understanding",
+    "Scalable Application Thinking",
+    "Enterprise Product Exposure",
+    "Application Flow Understanding",
+    "System Architecture Mindset",
+    "Full-Stack Direction",
+    "MongoDB Learning in Progress"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "WellCare Health",
+      "description": "A multi-tenant healthcare platform that reinforced service-heavy application design, secure access models, and API-driven workflows across patients and providers.",
+      "metrics": ["42+ layouts", "80+ services", "35% faster loads"],
+      "tech": ["Angular 13", "TypeScript", "RxJS", "JWT", "AES", "Bootstrap"],
+      "features": [
+        "Worked across a large application structure with secure, role-aware workflow design.",
+        "Implemented 5-tier role-based access control with JWT and AES-backed security patterns.",
+        "Strengthened understanding of service-oriented architecture and API-connected product flows.",
+        "Optimized performance with lazy loading, OnPush, and bundle splitting."
+      ],
+      "note": "Private enterprise project viewed here from application architecture, security, and service-flow perspective.",
+      "type": "Healthcare",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "TheSwapp",
+      "description": "A scalable platform for church ministry operations that highlighted integration-heavy workflows, structured feature logic, and real-time process coordination across organizations.",
+      "metrics": ["50+ reusable components", "25+ stop optimization", "35% productivity gain"],
+      "tech": ["Angular 13", "TypeScript", "Google Maps APIs", "Stripe", "Bootstrap", "Chart.js"],
+      "features": [
+        "Built and supported multi-organization workflows with clear operational logic.",
+        "Integrated maps, routes, places, and drawing services into real-time process flows.",
+        "Worked through feature coordination tied to member engagement, scheduling, and donation handling.",
+        "Improved productivity by 35% through structured application workflows and reusable implementation."
+      ],
+      "note": "Private product work presented from systems integration and application workflow perspective.",
+      "type": "Community",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "QuickLending",
+      "description": "An enterprise lending platform that strengthened my understanding of workflow-driven systems, document-heavy business processes, and role-based operational logic.",
+      "metrics": ["18 institutions", "40% faster processing", "35% better decisions"],
+      "tech": ["Angular 14", "ExcelJS", "PDFMake", "Docxtemplater", "ngx-charts", "Angular Calendar"],
+      "features": [
+        "Supported structured business workflows across role-based dashboards and lending operations.",
+        "Worked with document handling, analytics support, and process automation across the loan lifecycle.",
+        "Reduced processing time by 40% through streamlined product flow design.",
+        "Improved decision-making efficiency by 35% with stronger operational visibility."
+      ],
+      "note": "Private enterprise project framed around workflow logic, data handling, and end-to-end system behavior.",
+      "type": "Lending",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Node.js API Foundations",
+      "description": "A personal full-stack transition project focused on building RESTful APIs with Node.js and Express.js. It was designed to strengthen CRUD flow handling, middleware structure, routing clarity, and modular server-side organization while preparing for MongoDB-backed APIs.",
+      "metrics": ["Personal backend project", "CRUD workflows", "MongoDB next step"],
+      "tech": ["Node.js", "Express.js", "JavaScript", "REST APIs", "Postman"],
+      "features": [
+        "Built RESTful endpoints with clear routing and modular server-side structure.",
+        "Implemented CRUD operations and organized request / response flow cleanly.",
+        "Used middleware for request handling, validation flow, and reusable backend logic.",
+        "Structured the project as a practical backend fundamentals exercise while moving from frontend into full-stack work."
+      ],
+      "note": "Personal backend practice project created to represent real learning progress, not fabricated corporate backend experience.",
+      "type": "Backend Practice",
+      "featured": false
+    }
+  ],
+  "experience": [
+    {
+      "period": "July 2022 – Present",
+      "title": "Lead Frontend Engineer",
+      "company": "BLUMP TECH PRIVATE LIMITED",
+      "location": "On-site, Delhi",
+      "description": "Real software engineering experience across large, API-connected enterprise products. Frontend was my starting specialization, and that work built a strong foundation in application flow, product logic, system structure, and full-stack thinking.",
+      "bullets": [
+        "Developed 10+ responsive web apps integrated with RESTful APIs and strong cross-browser compatibility.",
+        "Worked on enterprise application flows spanning healthcare, church operations, and lending systems.",
+        "Partnered with UI/UX teams to translate workflows into reusable, scalable product implementation.",
+        "Integrated Firebase Storage for real-time file handling and document-driven application flows.",
+        "Improved stability, debugging quality, and frontend performance by 40%, strengthening end-to-end product understanding."
+      ],
+      "skills": ["Angular", "React", "REST APIs", "Enterprise Workflows", "Product Logic", "Full-Stack Direction"]
+    },
+    {
+      "period": "2018 – 2022",
+      "title": "Bachelor of Technology in Computer Science and Engineering",
+      "company": "Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
+      "location": "CGPA: 7.31",
+      "description": "Academic foundation in computer science fundamentals that supports backend thinking, application design, and structured software engineering.",
+      "bullets": [
+        "Graduated with a B.Tech in Computer Science and Engineering.",
+        "Built grounding in programming, data handling, system concepts, and software engineering fundamentals."
+      ],
+      "skills": ["Computer Science", "DBMS", "OOPS", "Software Engineering"]
+    }
+  ],
+  "services": [
+    {
+      "icon": "monitor",
+      "title": "Frontend Web App Development",
+      "description": "Responsive, production-ready interfaces built from real product experience across enterprise workflows and scalable web applications."
+    },
+    {
+      "icon": "layers",
+      "title": "Node.js Backend Development",
+      "description": "Backend foundations and server-side logic built with Node.js and Express.js for practical full-stack application support."
+    },
+    {
+      "icon": "bar-chart",
+      "title": "REST API Development",
+      "description": "Cleanly structured API layers with practical endpoint design, request handling, and maintainable backend flow organization."
+    },
+    {
+      "icon": "link",
+      "title": "Express.js Application Setup",
+      "description": "Express-based application structure with modular routing, middleware flow, and backend fundamentals organized for clarity."
+    },
+    {
+      "icon": "server",
+      "title": "Full Stack Web App Support",
+      "description": "Practical support across frontend and backend layers, informed by production frontend engineering and growing backend capability."
+    },
+    {
+      "icon": "zap",
+      "title": "API Integration & Application Logic",
+      "description": "Application flow design shaped by experience working across frontend systems, REST APIs, and backend learning projects."
+    }
+  ],
+  "contactLinks": [
+    { "type": "email", "label": "Email", "value": "shivams967@gmail.com", "href": "mailto:shivams967@gmail.com" },
+    { "type": "phone", "label": "Phone", "value": "+91 9971495653", "href": "tel:+919971495653" },
+    { "type": "linkedin", "label": "LinkedIn", "value": "Profile link available on request", "href": null },
+    { "type": "gitlab", "label": "GitLab", "value": "Repository access available on request", "href": null }
+  ],
+  "footerCopyright": "© 2026 · Shivam Sharma. Printed on the web in Delhi."
+}

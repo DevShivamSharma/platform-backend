@@ -1,0 +1,2 @@
+-- Production-generated portals do not include sample business records.
+-- Provisioning creates only the initial admin user and required system profile.

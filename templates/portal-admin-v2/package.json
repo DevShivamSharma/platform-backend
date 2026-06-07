@@ -1,0 +1,44 @@
+{
+  "name": "portal-admin-v2",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Standalone, config-driven organization portal template (Supabase-backed). Extracted from AidiN Health.",
+  "type": "module",
+  "sideEffects": [
+    "*.css",
+    "./src/shared/index.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^5.6.0",
+    "@stripe/stripe-js": "^8.8.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "@tanstack/react-query": "^5.90.21",
+    "@tanstack/react-query-devtools": "^5.91.3",
+    "@tanstack/react-virtual": "^3.13.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.12.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.4.0",
+    "xlsx": "^0.18.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^24.10.9",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react-swc": "^4.2.3",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  }
+}
