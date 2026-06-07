@@ -24,11 +24,30 @@ import { generateSQL, tableNameForModule } from "./lib/schemaGenerator.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Repo root = my-platform/ (one level above server/)
+// Path resolution that works in two layouts:
+//  - Standalone deploy (Render): this folder IS the repo root, so templates live
+//    INSIDE it ( ./templates ).
+//  - Local monorepo: templates is a sibling ( ../templates ).
+// Auto-detect, with env-var overrides for full control.
 const ROOT = path.resolve(__dirname, "..");
-const TEMPLATES_DIR = path.join(ROOT, "templates");
-const OUTPUT_DIR = path.join(ROOT, "output");
-const PORTALS_DIR = path.join(ROOT, "portals");
+function pickExisting(candidates, fallback) {
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) return candidate;
+  }
+  return fallback;
+}
+const TEMPLATES_DIR = process.env.TEMPLATES_DIR
+  ? path.resolve(process.env.TEMPLATES_DIR)
+  : pickExisting(
+      [path.join(__dirname, "templates"), path.join(ROOT, "templates")],
+      path.join(__dirname, "templates")
+    );
+const OUTPUT_DIR = process.env.OUTPUT_DIR
+  ? path.resolve(process.env.OUTPUT_DIR)
+  : path.join(__dirname, "output");
+const PORTALS_DIR = process.env.PORTALS_DIR
+  ? path.resolve(process.env.PORTALS_DIR)
+  : path.join(__dirname, "portals");
 
 // Skipped during template copy.
 const EXCLUDED = new Set(["node_modules", "dist", ".git"]);
